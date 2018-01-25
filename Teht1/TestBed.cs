@@ -17,6 +17,20 @@ namespace Teht1
             String[] dateStringsGood = { "1.2.13", "1.10.2017", "12.12.2017", "24.12.17" };
 
             RunDateTest(dateStringsBad, dateStringsGood);
+
+            Console.WriteLine();
+
+            TestParser();
+        }
+
+        private static void TestParser()
+        {
+            Console.Write("Input a list of numbers separated with commas\n> ");
+            string input = Console.ReadLine();
+            //TODO According to spec, this is meant to be capped at 10 numbers, but I don't care
+            Console.WriteLine();
+            Console.WriteLine("The string {0} contains {1} numbers, their sum is {2} and their average {3}."
+                , input, ItParser.Count(input), ItParser.Sum(input), ItParser.Average(input));
         }
 
         private static void RunNumberTest(string[] testStringsBad, string[] testStringsGood)

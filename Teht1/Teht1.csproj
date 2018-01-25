@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ItMath.cs" />
+    <Compile Include="ItParser.cs" />
     <Compile Include="TestBed.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
